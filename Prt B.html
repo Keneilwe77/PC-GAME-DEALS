@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Game Deals</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div>
+            <p class="eyebrow">GAMING DEAL FINDER</p>
+            <h1>PC Game Deals</h1>
+            <p>Find your next game at a better price.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="summary">
+            <div class="summary-card">
+                <span class="summary-label">Games available</span>
+                <strong id="game-count">0</strong>
+            </div>
+            <div class="summary-card">
+                <span class="summary-label">Games on sale</span>
+                <strong id="sale-count">0</strong>
+            </div>
+            <div class="summary-card">
+                <span class="summary-label">Cheapest game</span>
+                <strong id="cheapest-game">Loading...</strong>
+            </div>
+        </section>
+
+        <section class="filters" aria-label="Game filters">
+            <label class="search-label" for="search">
+                Search games
+                <input
+                    id="search"
+                    type="search"
+                    placeholder="e.g. Hollow Knight"
+                >
+            </label>
+
+            <label class="checkbox-label">
+                <input id="sale-only" type="checkbox">
+                Show sale games only
+            </label>
+
+            <label for="sort">
+                Sort by
+                <select id="sort">
+                    <option value="featured">Featured</option>
+                    <option value="price">Lowest price</option>
+                    <option value="discount">Biggest discount</option>
+                    <option value="title">Title A–Z</option>
+                </select>
+            </label>
+        </section>
+
+        <p id="results-message" aria-live="polite">
+            Loading games...
+        </p>
+
+        <section id="game-list" class="game-grid"
+                 aria-label="Game deals">
+        </section>
+
+        <p id="error-message" class="error" role="alert"></p>
+
+        <footer>
+            Prices are demonstration data in South African Rand (ZAR).
+            They are not live store offers.
+        </footer>
+    </main>
+</body>
+</html>

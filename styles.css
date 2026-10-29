@@ -1,0 +1,217 @@
+
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #edf2f7;
+    background: #10151f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+.site-header {
+    padding: 38px 20px;
+    background: linear-gradient(135deg, #192c45, #234e52);
+    border-bottom: 1px solid #334155;
+}
+
+.site-header > div,
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.eyebrow {
+    color: #7ee0c3;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1 {
+    margin: 8px 0;
+    font-size: clamp(30px, 5vw, 44px);
+}
+
+.site-header p:last-child {
+    color: #cbd5e1;
+}
+
+.container {
+    padding: 24px 20px 40px;
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+.summary-card,
+.game-card,
+.filters {
+    padding: 18px;
+    background: #192231;
+    border: 1px solid #303d50;
+    border-radius: 12px;
+}
+
+.summary-label {
+    display: block;
+    color: #a9b7ca;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.summary-card strong {
+    display: block;
+    font-size: 22px;
+    overflow-wrap: anywhere;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: 18px;
+    margin-bottom: 18px;
+}
+
+.search-label {
+    flex: 1;
+    min-width: 200px;
+}
+
+.filters label {
+    font-size: 13px;
+    color: #d5deeb;
+}
+
+.filters input[type="search"],
+.filters select {
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    padding: 11px;
+    border: 1px solid #46566d;
+    border-radius: 7px;
+    background: #10151f;
+    color: #edf2f7;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 12px;
+}
+
+#sort {
+    min-width: 160px;
+}
+
+#results-message {
+    color: #a9b7ca;
+    font-size: 14px;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.game-card h2 {
+    font-size: 19px;
+    margin: 0 0 16px;
+}
+
+.store {
+    color: #a9b7ca;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.price-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 9px 0;
+    font-size: 14px;
+}
+
+.price {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.old-price {
+    color: #9aa8b9;
+}
+
+.sale-price {
+    color: #7ee0c3;
+    font-size: 19px;
+}
+
+.sale-tag {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 6px 9px;
+    border-radius: 20px;
+    background: #164e3f;
+    color: #a7f3d0;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.saving {
+    color: #7ee0c3;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.error {
+    color: #fca5a5;
+}
+
+footer {
+    margin-top: 35px;
+    padding-top: 18px;
+    border-top: 1px solid #303d50;
+    color: #a9b7ca;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+    .game-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 550px) {
+    .summary {
+        grid-template-columns: 1fr;
+    }
+
+    .game-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filters {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .checkbox-label {
+        padding-bottom: 0;
+    }
+}

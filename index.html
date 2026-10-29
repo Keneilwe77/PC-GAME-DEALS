@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pixel Deals — PC Game Deals</title><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script></head>
+<body><header class="header"><div class="logo">▣</div><div><p class="eyebrow">YOUR NEXT ADVENTURE COSTS LESS</p><h1>Pixel Deals</h1></div></header>
+<main class="container"><section class="hero"><div><p class="eyebrow">PC GAME PRICE TRACKER</p><h2>Good games.<br><span>Better prices.</span></h2><p class="muted">Browse the supplied games, spot discounts, and find the cheapest option.</p></div><div class="stat"><small>Deals on sale</small><strong id="sale-count">—</strong><small>in this collection</small></div></section>
+<section class="toolbar"><label>Search games<input id="search" type="search" placeholder="Try “hol” or “portal”…"></label><label class="check"><input id="sale-only" type="checkbox"> Show sale games only</label><label>Sort by<select id="sort"><option value="featured">Featured</option><option value="price-asc">Current price: low to high</option><option value="discount-desc">Biggest discount</option><option value="title-asc">Title: A–Z</option></select></label></section>
+<section class="heading"><div><h2>Game deals</h2><p id="result-summary" aria-live="polite">Loading games…</p></div><div id="cheapest" class="chip"></div></section>
+<section id="games" class="games"></section><p id="empty" class="empty" hidden>No games match your filters. Try another search.</p><p id="error" class="error" role="alert" hidden></p>
+<section class="note"><h2>How prices are shown</h2><p>A game is on sale only when its sale price is lower than its normal price. All prices are in South African rand (R). Discount percentages are rounded to the nearest whole number.</p></section></main>
+<footer>Demo project · Uses the supplied exercise data · Prices are not live store offers.</footer></body></html>
