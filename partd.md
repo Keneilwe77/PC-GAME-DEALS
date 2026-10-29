@@ -42,4 +42,4 @@ I took 3 days tyring to solve this game
 
 ## Next time
 
-With another day, I would improve accessibility, and investigate integrating the free CheapShark API. I would also validate the data and add clearer loading and error states.
+I would improve accessibility, and investigate integrating the free CheapShark API. I would also validate the data and add clearer loading and error states.
